@@ -17,21 +17,9 @@ Auto Login works on Craft 2.4.x and Craft 2.5.x.
 
 ## Auto Login Overview
 
--Insert text here-
+Automatically logs in a front end user when they have successfully reset their password after following the link in the Craft egenreated password reset email.
 
-## Configuring Auto Login
-
--Insert text here-
-
-## Using Auto Login
-
--Insert text here-
-
-## Auto Login Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+Checks for a front end request and to make sure the user isn‘t already logged in first.
 
 ## Auto Login Changelog
 
