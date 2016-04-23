@@ -7,4 +7,12 @@
             "[Added] Initial release"
         ]
     }
+    {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/steverowling/autologin/archive/master.zip",
+        "date": "2016-04-23T10:57:00Z",
+        "notes": [
+            "[Added] Add check for new user registration as Craft already provides a config setting to auto login on new user registration."
+        ]
+    }
 ]
