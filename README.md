@@ -27,4 +27,8 @@ Checks for a front end request and to make sure the user isn‘t already logged 
 
 * Initial release
 
+### 1.0.1 -- 2016.04.23
+
+* Add check for new user registration as Craft already provides a config setting to auto login on new user registration.
+
 Brought to you by [Steve Rowling](https://springworks.co.uk)
