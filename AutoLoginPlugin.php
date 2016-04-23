@@ -45,8 +45,8 @@ class AutoLoginPlugin extends BasePlugin
             // Retrieve the userModel from the event
             $user = $event->params['user'];
 
-            // Check if this is a front end request and user is not already logged in and doesn't have an unverified email address
-            if (craft()->request->isSiteRequest() && craft()->userSession->isGuest() && !($user->unverifiedEmail)) {
+            // Check if this is a front end request, user is not already logged in, user doesn't have an unverified email address and we are not dealing with a new user
+            if (craft()->request->isSiteRequest() && craft()->userSession->isGuest() && !($user->unverifiedEmail) && ($user->id)) {
 
                 // Log the user in
                 craft()->userSession->loginByUserId($user->id);
