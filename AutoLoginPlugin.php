@@ -50,7 +50,11 @@ class AutoLoginPlugin extends BasePlugin
 
                 // Log the user in
                 craft()->userSession->loginByUserId($user->id);
-
+                $postLoginRedirect = craft()->config->get('postLoginRedirect');
+                if ($postLoginRedirect <> '') {
+                	$returnUrl = UrlHelper::getSiteUrl($postLoginRedirect);
+                	craft()->request->redirect($returnUrl);
+                }
             }
         });
 
